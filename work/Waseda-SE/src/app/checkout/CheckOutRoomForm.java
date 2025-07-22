@@ -17,13 +17,12 @@ public class CheckOutRoomForm {
 		return checkOutRoomControl;
 	}
 
-	private String roomNumber;
+        private String roomNumber;
 
-	public void checkOut() throws AppException {
-		/**
-		 * Your code for conducting check-out by using some Control object  
-		 */
-	}
+        public void checkOut() throws AppException {
+                CheckOutRoomControl control = getCheckOutRoomControl();
+                control.checkOut(roomNumber);
+        }
 
 	public String getRoomNumber() {
 		return roomNumber;
